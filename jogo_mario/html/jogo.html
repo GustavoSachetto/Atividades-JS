@@ -1,0 +1,34 @@
+<html lang="br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">				
+
+		<!--Adicionando Icone da pagina-->
+		<link rel="shorcut icon" href="../img/mario-parado.png">
+
+		<!--Nome da pagina-->
+		<title>Jogo Mario</title>
+
+		<!--Importando CSS e JS-->
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="../js/script.js" defer></script>		
+	</head>
+	<body>
+		<main class="jogo">			
+			<div class="cenario">		
+				<!--Mario-->
+				<img src="../img/mario-correndo.gif" class="mario">
+
+				<!--Obstaculo-->
+				<img src="" class="obstaculo">
+			</div>
+
+			<!--Tela de fim de jogo-->
+			<div class="fim-de-jogo" id="fim-de-jogo">
+				<h1 id="mostando-nome"></h1>
+				<h2 id="pontos" class="pontos"></h2>
+				<button class="botao" onClick="carregar()">Reiniciar</button>
+			</div>
+		</main>	
+	</body>
+</html>

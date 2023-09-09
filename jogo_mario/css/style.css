@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.jogo{
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cenario{
+	width: 80%;
+	height: 550px;
+	border: 6px solid black;	
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+
+form {
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.titulo {
+	font-size: 30px;
+	font-family: 'Press Start 2P';
+}
+
+.img > img{
+	width: 230px;
+}
+
+.login > input{
+    padding: 10px 13px;
+    border-radius: 10px;
+    font-size: 22px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.login > button{
+    text-align: center;
+    background-color: #db3333;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+	border: 2px solid transparent;
+    font-size: 20px;
+    max-width: 300px;
+    padding: 8px;
+    width: 100%;
+    font-family: verdana;
+    text-decoration: none;
+
+}
+
+.login > button:disabled{
+    background-color: #757575;
+    border: 2px solid rgb(82, 82, 82);
+    color: rgb(82, 82, 82);
+    padding: 8px;
+}
+
+.fim-de-jogo > h1{
+	margin-top: 100px;
+}
+
+.botao{
+    text-align: center;
+    background-color: #2ee446;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    max-width: 300px;
+    padding: 10px;
+    width: 100%;
+    font-family:'Press Start 2P';
+    text-decoration: none;
+	margin-top: 60px;
+}
+
+.pontos{
+	font-size: 30px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.fim-de-jogo{
+	padding: 20px 20px;
+	text-align: center;
+	color: rgb(255, 0, 0);
+	background-color: black;
+	font-family: 'Press Start 2P';
+	font-size: 40px;
+	width: 80%;
+	height: 525px;
+	display: none;
+	position: absolute;
+}
+
+.game-over{
+	height: 650px;
+}
+
+.obstaculo{
+	width: 120px;
+	bottom: 0;
+	position: absolute;
+	animation: obstaculo-um-animacao 2s infinite linear;
+}
+
+@keyframes obstaculo-um-animacao{
+	0%{
+		right: -150px;
+	}
+
+	100%{
+		right: 100%;
+	}
+}
+
+.mario, .mario-correndo, .mario-pulo{
+	position: absolute;
+	bottom: 0;
+	left: 60px;
+	width: 130px;
+}
+
+.mario-pulo{
+	animation: mario-evento 700ms ease-out;
+}
+
+@keyframes mario-evento{
+	0%{
+		bottom: 0;
+	}
+
+		40%{
+			bottom: 180;
+		}
+		
+			50%{
+				bottom: 190;
+			}
+
+		60%{
+			bottom: 180;
+		}
+
+	100%{
+		bottom: 0;
+	}
+}
