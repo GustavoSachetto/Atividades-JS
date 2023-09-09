@@ -1,0 +1,27 @@
+*{
+    background-color: rgb(180, 180, 180);
+}
+
+p{
+    font-size: 40;
+    font-family: impact;
+    color: rgb(199, 19, 19);
+    text-shadow: 2px 2px black;
+}
+
+.itens{
+    color: black;
+    font-size: 20;
+    font-family: Verdana;
+    display: block;
+
+}
+button{
+    padding: 17px;
+    border-radius: 25px;
+    font-size: 22px;
+    color: aliceblue;
+    background-color: black;
+    border: none;
+}
+

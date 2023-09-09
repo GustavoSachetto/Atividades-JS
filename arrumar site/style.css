@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    padding: 5px;
+}
+
+nav {
+    height: 80px;
+    background:     #7B68EE;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 15vw;
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+}
+
+nav a:hover {
+    color: #B8860B;
+    transition: 0.3s;
+}
+
+form {
+    display: flex;
+    align-self: center;
+    height: 170vh;
+    background-color: #DAA520;
+    color: #fff;
+    padding: 8vh 30vw;
+}
+input,
+select,
+textarea {
+    width: 40vw;
+    display:block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem 15vw;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #B8860B;
+    padding: 0rem 2rem;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-image{
+    width:100%;
+    height: 100%;
+}
+
+#form-button {
+    margin-top: 30px;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color:#fdcc04;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#form-button:hover{
+    background: #fff;
+    transition: 0.3s;
+}
+
+#CTA-button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #fdcc04;
+    background: #222222;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#CTA-button:hover{
+    background-color: #fff;
+    color:#222222;
+    transition: 0.3s;
+}
+
+#home{
+    background-color: #fdcc04;
+}
+
+.menu{
+    font-size: 20px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: #7B68EE;
+    
+}
+.menu div {
+    color: #FFFFFF;
+    font-style: italic;
+}

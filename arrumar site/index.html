@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="stylesheet" href="style.css" />
+        
+        <title>Atividade</title>
+    </head>
+    <body>
+        <nav>
+            <header>ATIVIDADE DE JAVASCRIPT -  INTERFACES WEB II</header>
+            <section class="nav-items">
+                <a href=#home>Home</a>
+                <a href=#form>Formulário</a>
+            </section>
+        </nav>
+        <section id="home">
+            <div class="container">
+                <div class="column-left">
+                    <h1>Nós queremos te conhecer</h1>
+                    <p>
+                        Entre em contato pelo formulário com suas informações para que nossa equipe possa te atender da melhor maneira possível!.
+                    </p>
+                    <a id="CTA-button" href="#form">Comece agora!</a>
+                </div>
+                <picture class="column-right">
+                    <img src="image.gif" alt="illustration" id="home-image"/>
+                </picture>
+            </div>
+        </section>
+            <section>
+                
+                <!--Formulario-->
+                <form id="form">
+                <div class="row justify" >
+
+                <h2>Formulário de Interesses</h2>
+                    
+                    <!--Receber Nome TXT-->
+                    <p>Nome:                    
+                    <input type="text" name="nome" id="txt_nome" size=40 maxlength=40 placeholder="Digite seu nome completo">
+                    </p>
+                    
+                    <!--Receber Curso TXT-->
+                    <p>Curso:
+                        <input type="text" name="curso" id="txt_curso" size=40 maxlength=40 placeholder="Digite seu curso">
+                    </p>
+                    
+                    <!--Receber Comentarios TXT-->
+                    <p>Nos conte um pouquinho sobre você:
+                        <textarea type="text" name="comentario" id="txt_comentario" cols="30" rows="4"></textarea>
+                    </p>
+                    
+                    <!--Receber exercicios RADIO-->
+                    <p>Você faz exercícios regularmente?
+                        <input type="radio" name="atividades" id="sim" value=1>Sim
+                        <input type="radio" name="atividades" id="nao" value=2>Não
+                    </p>
+                    
+                    <!--Receber Topicos Favoritos CHECKBOX-->
+                    <p>Por onde você lê sobre seus tópicos favoritos?
+                        <input type="checkbox" name="topico" id="Books">Livros
+                        <input type="checkbox" name="topico" id="Web">Sites
+                        <input type="checkbox" name="topico" id="Apps">Aplicativos
+                        <input type="checkbox" name="topico" id="Magazines">Revistas
+                    </p>
+                    
+                    <!--Receber Genero Filmes OPTION-->
+                    <p>Qual gênero de filmes que você mais gosta?
+                        <select name="moviePref" id="movie">
+                            <option></option>
+                            <option value=Comédia id="1">Comédia</option>
+                            <option value=Romance id="2">Romance</option>
+                            <option value=Drama id="3">Drama</option>
+                            <option value=Terror id="4">Terror</option>
+                            <option value=Ação id="5">Ação</option>
+                        </select>
+                    </p>
+                    
+                    <!--Botao-->
+                    <button id="form-button" type="button" value="ENVIAR" onclick="verifica()">Enviar</button>
+
+                    <!--innerHTML (Cada id desse é uma informação adicionada na tela)-->
+                    <br><br>
+
+                    <div class="menu">
+                        <h2>Informações-Enviadas:</h2>
+                        
+                        Nome: <div id="nomeM"></div>
+                        Curso: <div id="cursoM"></div>
+                        Sobre você: <div id="comentarioM"></div>
+                        Faz exercicíos regularmente: <div id="exerciciosM"></div>
+                        Onde você seus topicos favoritos: <div id="favoritoM"></div>
+                        Genero favorito de filme: <div id="optionM"></div>
+                    </div>
+                    <br>
+                </div>
+            </form>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
